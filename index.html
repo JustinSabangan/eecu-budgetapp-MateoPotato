@@ -19,38 +19,47 @@
 
     <h1>Budget Calculator</h1>
     
-    <section>
-        <p>Gross Annual Income:</p>
-        <input type="text" id="gross-annual-income">
+    <section id="career-input-section">
+        <p>Career:</p>
+        <select name="career" id="career-input"> <!--Should be a dropdown menu to search for career (API)-->
+            <option value="default"></option>
+            <option value="accountant">Accountant</option>
+            <option value="architect">Architect</option>
+            <option value="doctor">Doctor</option>
+            <option value="engineer">Engineer</option>
+            <option value="web-developer">Web Developer</option>
+        </select>
     </section>
 
-    <section>
+    <section id="category-education">
         <h2>Category 1: Education</h2>
         <div class="blue-background">
             <ul>
                 <li>
                     <!--Assuming emoji will be a ::before css image-->
-                    <p>Monthly Tuition</p>
-                    <input type="text" id="monthly-tuition-input">
-                    <img id="monthly-tuition-info">
+                    <section class="spending-input">
+                        <p>Monthly Tuition</p>
+                        <input type="text" id="monthly-tuition-input">
+                    </section>
+                    <img src="../images/info.svg">
                 </li>
                 <li>
                     <!--Assuming emoji will be a ::before css image-->
                     <p>Books & Supplies</p>
                     <input type="text" id="books-and-supplies-input">
-                    <img id="monthly-tuition-info">
+                    <img src="../images/info.svg">
                 </li>
                 <li>
                     <!--Assuming emoji will be a ::before css image-->
                     <p>Dorm & Board</p>
                     <input type="text" id="dorms-and-board-input">
-                    <img id="dorms-and-board-info">
+                    <img src="../images/info.svg">
                 </li>
                 <li>
                     <!--Assuming emoji will be a ::before css image-->
                     <p>Other Expenses</p>
                     <input type="text" id="other-expenses-input">
-                    <img id="other-expenses-info">
+                    <img src="../images/info.svg">
                 </li>
             </ul>
         </div>
